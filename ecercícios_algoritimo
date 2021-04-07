@@ -1,0 +1,90 @@
+//ExercÃ­cios Entrada Processamento Saida JS
+
+/*
+
+    1 - Elaborar um programa que leia o valor de um jantar. 
+    Calcule e informe o valor da taxa do garÃ§om (10%) e o valor total a ser pago
+
+    Ex:
+        Valor do Jantar: R$ 80.00
+        Taxa do GarÃ§om: R$ 8.00
+        Total a pagar: R$ 88.00
+
+*/
+var valorJantar = Number(prompt("valor do jantar));
+var taxaGarçom = valorJantar * 0.1;
+var valorTotal = valorJantar + taxaGarçom;
+
+console.log(`valor do Jantar: ${valorJantar.toFixed(2)}`);
+console.log(`Taxa do Garçom: ${taxaGarçom.toFixed(2)}`);
+console.log(`valor Total: ${valorTotal.toFixed(2)}`);
+
+
+/*
+
+    2 - Elaborar um programa que leia a duraÃ§Ã£o de uma viagem em dias e horas.
+    Calcule e informe a duraÃ£o total da viagem em nÃºmero de horas.
+
+
+    Ex:
+        NÂº Dias: 2
+        NÂº Horas: 5
+        Total de Horas: 53
+
+*/
+
+var numDias = Number(prompt("número de dias"));
+var numHoras = Number(prompt("numero de horas"));
+var horasTotais = (numDias*24) + numHoras;
+
+console.log(`número de dias: ${numDias}`);
+console.log(`número de horas: ${numHoras}`);
+console.log(`total de horas: ${horasTotais}`);
+
+/*
+    3 - Elaborar um programa que leia um nÃºmero.
+    Calcule e informe os seus vizinhos, ou seja, o nÃºmero anterior e o nÃºmero posterior  
+
+    Exemplo:
+        NÃºmero: 15
+        Vizinhos: 14 e 16
+
+*/
+
+var numero = Number(prompt("digite um número"));
+var anterior = numero-1;
+var posterior = numero+1;
+
+alert(`Anterior: ${numero-1} \n Posterior: ${numero+1}`);
+
+/*
+    4 - Elaborar um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos clientes vÃ£o pagÃ¡-la.
+    Calcule e informe o valor a ser pago por cliente.
+
+    Exemplo:
+        Valor da conta: R$ 90.00
+        NÃºmero de clientes: 3
+        Valor por cliente: 30.00
+*/
+   
+
+/*
+    5 - Elaborar um programa para uma loja, o qual leia o preÃ§o de um prouto e informe as opÃ§Ãµes de pagamento.
+    Calcule e informe o valor para pagamento Ã  vista com 10% de desconto e o valor em 3x.
+
+    Exemplo:
+        PreÃ§o: R$ 60.00
+        Ã€ vista: R$ 54.00
+        Ou 3x de R$: 20.00
+*/
+   
+/*
+    6 - Elaborar um programa que leia 3 notas de um aluno em uma determinada disciplina.
+    Calcule e informe a mÃ©dia das notas.
+
+    Exemplo:
+        1Âª Nota: 7.5
+        2Âª Nota: 8.0
+        3Âª Nota: 6.4
+        MÃ©dia: 7.3
+*/
